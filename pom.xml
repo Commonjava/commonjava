@@ -406,7 +406,7 @@
 
   <profiles>
     <profile>
-      <id>cq</id>
+      <id>formatting</id>
       <build>
         <plugins>
           <plugin>
@@ -421,6 +421,13 @@
               </execution>
             </executions>
           </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
+      <id>cq</id>
+      <build>
+        <plugins>
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-pmd-plugin</artifactId>
