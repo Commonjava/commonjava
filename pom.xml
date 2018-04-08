@@ -187,46 +187,7 @@
         <plugin>
           <artifactId>maven-enforcer-plugin</artifactId>
           <version>${version.plugin.enforcer}</version>
-          <dependencies>
-            <dependency>
-              <groupId>org.commonjava.maven.enforcer</groupId>
-              <artifactId>enforce-managed-deps-rule</artifactId>
-              <version>1.0</version>
-            </dependency>
-            <dependency>
-              <groupId>de.is24.maven.enforcer.rules</groupId>
-              <artifactId>illegal-transitive-dependency-check</artifactId>
-              <version>1.7.4</version>
-            </dependency>
-          </dependencies>
           <executions>
-           <execution>
-              <id>enforce-commonjava-standards</id>
-              <goals>
-                <goal>enforce</goal>
-              </goals>
-              <phase>process-classes</phase>
-              <configuration>
-                <fail>${enforceStandards}</fail>
-                <rules>
-                  <requireManagedDeps implementation="org.commonjava.maven.enforcer.rule.EnforceManagedDepsRule">
-                    <!-- <message>Capture dependencies in top-level dependencyManagement section for easy reference.</message> -->
-                    <checkProfiles>false</checkProfiles>
-                    <failOnViolation>${enforceManagedDeps}</failOnViolation>
-                  </requireManagedDeps>
-                  <illegalTransitiveDependencyCheck implementation="de.is24.maven.enforcer.rules.IllegalTransitiveDependencyCheck">
-                    <reportOnly>${skipIllegalTransitiveEnforcement}</reportOnly>
-                    <regexIgnoredClasses>
-                        <regexIgnoredClass>com\.sun\.net\.httpserver\..+</regexIgnoredClass>
-                        <regexIgnoredClass>javax\..+</regexIgnoredClass>
-                        <regexIgnoredClass>org\.w3c\.dom\..+</regexIgnoredClass>
-                        <regexIgnoredClass>org\.xml\.sax\..+</regexIgnoredClass>
-                    </regexIgnoredClasses>
-                    <useClassesFromLastBuild>true</useClassesFromLastBuild>
-                  </illegalTransitiveDependencyCheck>
-                </rules>
-              </configuration>
-            </execution>
             <execution>
               <id>enforce-best-practices</id>
               <goals>
