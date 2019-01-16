@@ -20,7 +20,7 @@
 
   <groupId>org.commonjava</groupId>
   <artifactId>commonjava</artifactId>
-  <version>13-SNAPSHOT</version>
+  <version>13</version>
   <packaging>pom</packaging>
 
   <name>CommonJava Top-Level Parent POM</name>
@@ -50,7 +50,7 @@
     <connection>scm:git:https://github.com/Commonjava/commonjava.git</connection>
     <developerConnection>scm:git:git@github.com:Commonjava/commonjava.git</developerConnection>
     <url>http://github.com/Commonjava/commonjava</url>
-    <tag>HEAD</tag>
+    <tag>commonjava-13</tag>
   </scm>
 
   <properties>
