@@ -72,7 +72,7 @@
     <version.plugin.surefire>2.18.1</version.plugin.surefire>
     <version.plugin.failsafe>2.18.1</version.plugin.failsafe>
     <version.plugin.clean>2.5</version.plugin.clean>
-    <version.plugin.deploy>2.7</version.plugin.deploy>
+    <version.plugin.deploy>2.8.2</version.plugin.deploy>
     <version.plugin.install>2.4</version.plugin.install>
     <version.plugin.resources>2.6</version.plugin.resources>
     <version.plugin.site>3.3</version.plugin.site>
