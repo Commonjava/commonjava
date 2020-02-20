@@ -54,7 +54,7 @@
   </scm>
 
   <properties>
-    <javaVersion>1.7</javaVersion>
+    <javaVersion>1.8</javaVersion>
     <javaTestVersion>${javaVersion}</javaTestVersion>
     <projectOwner>John Casey</projectOwner>
     <projectEmail>jdcasey@commonjava.org</projectEmail>
