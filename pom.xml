@@ -55,6 +55,8 @@
 
   <properties>
     <javaVersion>1.8</javaVersion>
+    <!-- This required version is just a version limit for enforcer checking -->
+    <requiredJavaVersion>1.8</requiredJavaVersion>
     <javaTestVersion>${javaVersion}</javaTestVersion>
     <projectOwner>Red Hat, Inc.</projectOwner>
     <projectEmail>http://github.com/Commonjava/commonjava</projectEmail>
@@ -86,7 +88,7 @@
 
     <unEnforcedPlugins>org.eclipse.m2e:lifecycle-mapping</unEnforcedPlugins>
     <enforcedMavenVersion>(3.0.0,)</enforcedMavenVersion>
-    <enforcedJavaVersion>${javaVersion}</enforcedJavaVersion>
+    <enforcedJavaVersion>${requiredJavaVersion}</enforcedJavaVersion>
 
     <enforceBestPractices>true</enforceBestPractices>
     <enforceStandards>true</enforceStandards>
