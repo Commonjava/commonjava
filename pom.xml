@@ -69,7 +69,7 @@
     <version.plugin.source>3.3.0</version.plugin.source>
     <version.plugin.javadoc>3.6.3</version.plugin.javadoc>
     <version.plugin.gpg>3.1.0</version.plugin.gpg>
-    <version.plugin.surefire>3.2.2</version.plugin.surefire>
+    <version.plugin.surefire>3.2.5</version.plugin.surefire>
     <version.plugin.failsafe>3.2.2</version.plugin.failsafe>
     <version.plugin.clean>3.3.2</version.plugin.clean>
     <version.plugin.deploy>3.1.1</version.plugin.deploy>
