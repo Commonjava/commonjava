@@ -70,7 +70,7 @@
     <version.plugin.javadoc>3.6.3</version.plugin.javadoc>
     <version.plugin.gpg>3.1.0</version.plugin.gpg>
     <version.plugin.surefire>3.2.5</version.plugin.surefire>
-    <version.plugin.failsafe>3.2.2</version.plugin.failsafe>
+    <version.plugin.failsafe>3.2.5</version.plugin.failsafe>
     <version.plugin.clean>3.3.2</version.plugin.clean>
     <version.plugin.deploy>3.1.4</version.plugin.deploy>
     <version.plugin.sonatype>0.7.0</version.plugin.sonatype>
