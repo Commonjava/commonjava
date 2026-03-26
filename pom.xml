@@ -74,7 +74,7 @@
     <version.plugin.clean>3.3.2</version.plugin.clean>
     <version.plugin.deploy>3.1.4</version.plugin.deploy>
     <version.plugin.sonatype>0.7.0</version.plugin.sonatype>
-    <version.plugin.install>3.1.1</version.plugin.install>
+    <version.plugin.install>3.1.4</version.plugin.install>
     <version.plugin.resources>3.3.1</version.plugin.resources>
     <version.plugin.site>3.9.1</version.plugin.site>
     <version.plugin.pmd>3.21.2</version.plugin.pmd>
