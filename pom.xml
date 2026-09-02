@@ -59,7 +59,7 @@
     <projectOwner>Red Hat, Inc.</projectOwner>
     <projectEmail>http://github.com/Commonjava/commonjava</projectEmail>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <version.plugin.compiler>3.11.0</version.plugin.compiler>
+    <version.plugin.compiler>3.15.0</version.plugin.compiler>
     <version.plugin.plugin>3.15.2</version.plugin.plugin>
     <version.plugin.plexus-component-metadata>1.6</version.plugin.plexus-component-metadata>
     <version.plugin.release>3.1.1</version.plugin.release>
