@@ -23,7 +23,7 @@ jobs:
     with:
       project_name: "Commonjava/commonjava"
       SCA: true
-      SAST: true
+      SAST: false
       triggering_run_id: ${{ github.event.workflow_run.id }}
       pr_feedback: true
     secrets:

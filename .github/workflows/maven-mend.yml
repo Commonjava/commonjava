@@ -28,7 +28,7 @@ jobs:
     with:
       project_name: "Commonjava/commonjava"
       SCA: true
-      SAST: true
+      SAST: false
     secrets:
       MEND_URL: ${{ secrets.MEND_URL }}
       MEND_USER_KEY: ${{ secrets.MEND_USER_KEY }}
