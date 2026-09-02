@@ -71,7 +71,7 @@
     <version.plugin.gpg>3.1.0</version.plugin.gpg>
     <version.plugin.surefire>3.5.6</version.plugin.surefire>
     <version.plugin.failsafe>3.5.6</version.plugin.failsafe>
-    <version.plugin.clean>3.3.2</version.plugin.clean>
+    <version.plugin.clean>3.5.0</version.plugin.clean>
     <version.plugin.deploy>3.1.4</version.plugin.deploy>
     <version.plugin.sonatype>0.11.0</version.plugin.sonatype>
     <version.plugin.install>3.1.4</version.plugin.install>
