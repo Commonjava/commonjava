@@ -1,12 +1,12 @@
 <!--
 
-    Copyright (C) 2011-2022 Red Hat, Inc. (http://github.com/Commonjava/commonjava)
+    Copyright © 2011-2022 Red Hat, Inc. (http://github.com/Commonjava/commonjava)
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
 
-            http://www.apache.org/licenses/LICENSE-2.0
+        http://www.apache.org/licenses/LICENSE-2.0
 
     Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS,
@@ -93,6 +93,11 @@
     <enforceStandards>true</enforceStandards>
     <enforceVersions>true</enforceVersions>
     <enforceTripHazards>true</enforceTripHazards>
+
+    <central.sonatype.url>https://central.sonatype.com/repository/maven-snapshots/</central.sonatype.url>
+    <central.serverId>central-publisher</central.serverId>
+    <central.autoPublish>true</central.autoPublish>
+    <central.skipPublishing>false</central.skipPublishing>
   </properties>
 
   <build>
@@ -181,7 +186,7 @@
           <configuration>
             <autoVersionSubmodules>true</autoVersionSubmodules>
             <useReleaseProfile>false</useReleaseProfile>
-            <releaseProfiles>release</releaseProfiles>
+            <releaseProfiles>central-release</releaseProfiles>
           </configuration>
         </plugin>
         <plugin>
@@ -190,8 +195,9 @@
           <version>${version.plugin.sonatype}</version>
           <extensions>true</extensions>
           <configuration>
-            <publishingServerId>central</publishingServerId>
-            <autoPublish>true</autoPublish>
+            <publishingServerId>${central.serverId}</publishingServerId>
+            <autoPublish>${central.autoPublish}</autoPublish>
+            <skipPublishing>${central.skipPublishing}</skipPublishing>
           </configuration>
         </plugin>
         <plugin>
@@ -457,7 +463,7 @@
       </build>
     </profile>
     <profile>
-      <id>release</id>
+      <id>central-release</id>
       <build>
         <plugins>
           <plugin>
@@ -510,9 +516,8 @@
   <distributionManagement>
     <snapshotRepository>
       <uniqueVersion>true</uniqueVersion>
-      <id>central-portal-snapshots</id>
-      <name>Central Portal Snapshots</name>
-      <url>https://central.sonatype.com/repository/maven-snapshots/</url>
+      <id>${central.serverId}</id>
+      <url>${central.sonatype.url}</url>
       <layout>default</layout>
     </snapshotRepository>
   </distributionManagement>
@@ -525,5 +530,4 @@
       <snapshots><enabled>true</enabled></snapshots>
     </repository>
   </repositories>
-
 </project>
