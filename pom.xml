@@ -96,7 +96,7 @@
 
     <central.sonatype.url>https://central.sonatype.com</central.sonatype.url>
     <central.serverId>central-publisher</central.serverId>
-    <central.autoPublish>true</central.autoPublish>
+    <central.autoPublish>false</central.autoPublish>
     <central.waitUntil>validated</central.waitUntil>
     <central.skipPublishing>false</central.skipPublishing>
   </properties>
@@ -519,7 +519,7 @@
     <snapshotRepository>
       <uniqueVersion>true</uniqueVersion>
       <id>${central.serverId}</id>
-        <url>${central.sonatype.url}/repository/maven-snapshots/</url>
+      <url>${central.sonatype.url}/repository/maven-snapshots/</url>
       <layout>default</layout>
     </snapshotRepository>
     <repository>
