@@ -94,9 +94,10 @@
     <enforceVersions>true</enforceVersions>
     <enforceTripHazards>true</enforceTripHazards>
 
-    <central.sonatype.url>https://central.sonatype.com/repository/maven-snapshots/</central.sonatype.url>
+    <central.sonatype.url>https://central.sonatype.com</central.sonatype.url>
     <central.serverId>central-publisher</central.serverId>
     <central.autoPublish>true</central.autoPublish>
+    <central.waitUntil>validated</central.waitUntil>
     <central.skipPublishing>false</central.skipPublishing>
   </properties>
 
@@ -197,6 +198,7 @@
           <configuration>
             <publishingServerId>${central.serverId}</publishingServerId>
             <autoPublish>${central.autoPublish}</autoPublish>
+            <waitUntil>${central.waitUntil}</waitUntil>
             <skipPublishing>${central.skipPublishing}</skipPublishing>
           </configuration>
         </plugin>
@@ -517,9 +519,13 @@
     <snapshotRepository>
       <uniqueVersion>true</uniqueVersion>
       <id>${central.serverId}</id>
-      <url>${central.sonatype.url}</url>
+        <url>${central.sonatype.url}/repository/maven-snapshots/</url>
       <layout>default</layout>
     </snapshotRepository>
+    <repository>
+      <id>${central.serverId}</id>
+      <url>${central.sonatype.url}</url>
+    </repository>
   </distributionManagement>
 
   <repositories>
