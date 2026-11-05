@@ -78,7 +78,7 @@
     <version.plugin.resources>3.5.0</version.plugin.resources>
     <version.plugin.site>3.22.0</version.plugin.site>
     <version.plugin.pmd>3.28.0</version.plugin.pmd>
-    <version.plugin.jacoco>0.8.15</version.plugin.jacoco>
+    <version.plugin.jacoco>0.8.16</version.plugin.jacoco>
 
     <plugin.jacoco.skip>true</plugin.jacoco.skip>
 
