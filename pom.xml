@@ -519,7 +519,7 @@
     <snapshotRepository>
       <uniqueVersion>true</uniqueVersion>
       <id>${central.serverId}</id>
-      <url>${central.sonatype.url}</url>
+      <url>${central.sonatype.url}/repository/maven-snapshots/</url>
       <layout>default</layout>
     </snapshotRepository>
     <repository>
